@@ -8,9 +8,9 @@
 - [RESULTS](Results)
 - [RECOMMENDATIONS](Recommendations)
 - [LIMITATIONS](Limitations)
-- 
 
-- PROJECT OVERVIEW
+
+  ### - PROJECT OVERVIEW
 
    A data analysis project that involes data filtering & cleaning and also data standardization. This data concerns world layoffs from 2020 - 2023.
 
@@ -18,11 +18,11 @@
 
     Layoffs : The dataset used for this analysis is the 'layoffs.csv' file, providing information about layoffs from each company per year & location.
 
-- TOOLS
+  #### - TOOLS
 
     MYSQL Server (https://mysql.com)
 
-- DATA CLEANING
+  #### - DATA CLEANING
 
     During the data claning stage, i did the following :
   - Filtered and removed duplicates
@@ -30,7 +30,7 @@
   - Inspected null/blank values
   - Removed unnecessary rows/colums
  
-- DATA ANALYSIS
+  #### - DATA ANALYSIS
 
    The following are steps taken in "cleaning" the data
   - I created a staging version & inserted data into layoffs_staging. A staging version acts as a mirror of the primary dataset, providing a secure backup to safeguard the data against accidental data loss or unforeseen change.
@@ -96,13 +96,13 @@ CREATE TABLE `layoffs_staging2` (
   DELETE
   FROM layoffs_staging2;
   ```
-- RESULTS
+  #### - RESULTS
   During the data cleaning process, I found duplicate records, different date formats & missing/blank fields. Cleaning the data helped fix ll of these issues. Duplicates were removed, names and formats were made consistent, and missing data was handled carefully. After cleaning, the data was better and could be worked with.
 
-- RECOMMENDATIONS
+  #### - RECOMMENDATIONS
 When cleaning a dataset, always create a staging or backup table first. This allows safe experimentation and ensures that raw data is preserved. Check for duplicates on time using "distint" statement or give each row a "row number". Also, validate data types and ensure that each column uses the correct data type (e.g., dates should not be stored as text). Convert where necessary to support accurate filtering and analysis.
 
-- LIMITATIONS
+#### - LIMITATIONS
 Due to data sourcing at different times and differnt countries, the data isn't accurate as to the number of layoffs around the globe during the said years.
   
   
