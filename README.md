@@ -97,7 +97,7 @@ CREATE TABLE `layoffs_staging2` (
   FROM layoffs_staging2;
   ```
   #### - RESULTS
-  During the data cleaning process, I found duplicate records, different date formats & missing/blank fields. Cleaning the data helped fix ll of these issues. Duplicates were removed, names and formats were made consistent, and missing data was handled carefully. After cleaning, the data was better and could be worked with.
+  During the data cleaning process, I found duplicate records, different date formats & missing/blank fields. Cleaning the data helped fix all of these issues. Duplicates were removed, names and formats were made consistent, and missing data was handled carefully. After cleaning, the data was better and could be worked with.
 
   #### - RECOMMENDATIONS
 When cleaning a dataset, always create a staging or backup table first. This allows safe experimentation and ensures that raw data is preserved. Check for duplicates on time using "distint" statement or give each row a "row number". Also, validate data types and ensure that each column uses the correct data type (e.g., dates should not be stored as text). Convert where necessary to support accurate filtering and analysis.
