@@ -108,7 +108,7 @@ CREATE TABLE `layoffs_staging2` (
 
   ### Limitations
   
-  Due to data sourcing at different times and differnt countries, the data isn't accurate as to the number of layoffs around the globe during the said years.
+  Due to data sourcing at different times and different countries, the data isn't accurate as to the number of layoffs around the globe during the said years.
   
   
   
